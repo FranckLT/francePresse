@@ -6,9 +6,7 @@
 
 package fr.france_presse.java_bean;
 
-import com.sun.mail.imap.protocol.ID;
-import java.sql.Timestamp;
-import javafx.scene.control.TitledPane;
+import java.time.LocalDateTime;
 
 /**
  * 
@@ -20,9 +18,42 @@ public class Dispatch {
     
     private String title;
     
-    private Timestamp publishTime;
+    private LocalDateTime publishTime;
     
-    private Reporter reporter;
+    private String reporterName;
+
+    public int getIdDispatch() {
+        return idDispatch;
+    }
+
+    public void setIdDispatch(int idDispatch) {
+        this.idDispatch = idDispatch;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public LocalDateTime getPublishTime() {
+        return publishTime;
+    }
+
+    public void setPublishTime(LocalDateTime publishTime) {
+        this.publishTime = publishTime;
+    }
+
+    public String getReporterName() {
+        return reporterName;
+    }
+
+    public void setReporterName(String reporterName) {
+        this.reporterName = reporterName;
+    }
+
     
     
     
